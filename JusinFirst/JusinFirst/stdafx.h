@@ -19,3 +19,26 @@
 
 
 // TODO: 프로그램에 필요한 추가 헤더는 여기에서 참조합니다.
+
+//standard header
+#include <vector>
+#include <list>
+#include <map>
+
+using namespace std;
+
+//user header
+#include "Define.h"
+#include "Extern.h"
+#include "Enum.h"
+#include "Struct.h"
+#include "Constants.h"
+#include "Function.h"
+#include "Typedef.h"
+
+
+//mgr header
+#include "CAbstractFactory.h"
+#include "KeyMgr.h"
+#include "ObjMgr.h"
+#include "BmpMgr.h"

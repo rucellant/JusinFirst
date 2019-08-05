@@ -1,55 +1,172 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="소스 파일">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="99. etc">
+      <UniqueIdentifier>{2cb66c26-d2bb-4e97-ae4e-319ae2b60c2b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="헤더 파일">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="리소스 파일">
+    <Filter Include="99. etc\리소스 파일">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="00. Mainframe">
+      <UniqueIdentifier>{9e6d3ca0-c9c0-45b7-8320-fdbc5c3d62c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98. Header">
+      <UniqueIdentifier>{b26ae345-1515-412d-bf26-4329e771ca5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Maingame">
+      <UniqueIdentifier>{9eba00bf-4eda-4301-8810-27f0d2fb211a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObj">
+      <UniqueIdentifier>{9ed9429a-c966-4056-9a7e-4deaea7ed732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObj\00. GameObj">
+      <UniqueIdentifier>{4947f5f1-e1cf-4f5e-a172-d0cb93318d9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager">
+      <UniqueIdentifier>{f88aa673-b546-4f27-b707-08dd244e26ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager\01. AbstractFactory">
+      <UniqueIdentifier>{496dd468-012b-48b1-95aa-453087546019}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager\02. KeyMgr">
+      <UniqueIdentifier>{f26e59f3-7f4a-45e6-8579-f19d6a74d765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager\03. ObjMgr">
+      <UniqueIdentifier>{db822fa5-561a-41db-b6ce-97907e923d7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager\04. ScrollMgr">
+      <UniqueIdentifier>{44f42ff5-1c49-4526-a76f-a7c61a3111e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager\05. BmpMgr">
+      <UniqueIdentifier>{385fa501-f31c-43f5-9f11-dafc7d35c743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager\05. BmpMgr\01. Bmp">
+      <UniqueIdentifier>{ec0a875b-ee4a-4610-b8d0-4398d430ded8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager\05. BmpMgr\02. BmpMgr">
+      <UniqueIdentifier>{013c7062-8486-4624-b19c-9b28af2d8542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager\06. CollisionMgr">
+      <UniqueIdentifier>{dc347058-cf16-4284-8968-5575216d96a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager\07. SceneMgr">
+      <UniqueIdentifier>{5496baa9-e2d9-45b3-8b8a-623ff6b1532c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager\07. SceneMgr\01. Scene">
+      <UniqueIdentifier>{17ce9934-17c0-494b-bc92-0ded1f8d9641}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Resource.h">
+      <Filter>99. etc</Filter>
     </ClInclude>
     <ClInclude Include="targetver.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>99. etc</Filter>
     </ClInclude>
-    <ClInclude Include="Resource.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="stdafx.h">
+      <Filter>98. Header</Filter>
     </ClInclude>
-    <ClInclude Include="JusinFirst.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="Mainframe.h">
+      <Filter>00. Mainframe</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>98. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Extern.h">
+      <Filter>98. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Maingame.h">
+      <Filter>01. Maingame</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>98. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Enum.h">
+      <Filter>98. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObj.h">
+      <Filter>02. GameObj\00. GameObj</Filter>
+    </ClInclude>
+    <ClInclude Include="CAbstractFactory.h">
+      <Filter>03. Manager\01. AbstractFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h">
+      <Filter>98. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyMgr.h">
+      <Filter>03. Manager\02. KeyMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h">
+      <Filter>98. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMgr.h">
+      <Filter>03. Manager\03. ObjMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Typedef.h">
+      <Filter>98. Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ScrollMgr.h">
+      <Filter>03. Manager\04. ScrollMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Bmp.h">
+      <Filter>03. Manager\05. BmpMgr\01. Bmp</Filter>
+    </ClInclude>
+    <ClInclude Include="BmpMgr.h">
+      <Filter>03. Manager\05. BmpMgr\02. BmpMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>03. Manager\07. SceneMgr\01. Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>99. etc</Filter>
     </ClCompile>
-    <ClCompile Include="JusinFirst.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="Mainframe.cpp">
+      <Filter>00. Mainframe</Filter>
+    </ClCompile>
+    <ClCompile Include="Maingame.cpp">
+      <Filter>01. Maingame</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObj.cpp">
+      <Filter>02. GameObj\00. GameObj</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyMgr.cpp">
+      <Filter>03. Manager\02. KeyMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMgr.cpp">
+      <Filter>03. Manager\03. ObjMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="ScrollMgr.cpp">
+      <Filter>03. Manager\04. ScrollMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Bmp.cpp">
+      <Filter>03. Manager\05. BmpMgr\01. Bmp</Filter>
+    </ClCompile>
+    <ClCompile Include="BmpMgr.cpp">
+      <Filter>03. Manager\05. BmpMgr\02. BmpMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>03. Manager\07. SceneMgr\01. Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="JusinFirst.rc">
-      <Filter>리소스 파일</Filter>
+      <Filter>99. etc\리소스 파일</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="small.ico">
-      <Filter>리소스 파일</Filter>
+      <Filter>99. etc\리소스 파일</Filter>
     </Image>
     <Image Include="JusinFirst.ico">
-      <Filter>리소스 파일</Filter>
+      <Filter>99. etc\리소스 파일</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt">
+      <Filter>99. etc</Filter>
+    </Text>
   </ItemGroup>
 </Project>
