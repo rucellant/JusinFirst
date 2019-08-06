@@ -1,7 +1,7 @@
 #pragma once
 
-#define GAMECX	1280
-#define GAMECY	720
+#define GAMECX	1920
+#define GAMECY	1080
 
 #define NO_EVENT		0
 #define OBJ_DEAD		1

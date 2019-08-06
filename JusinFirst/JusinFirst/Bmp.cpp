@@ -14,7 +14,7 @@ CBmp::~CBmp()
 void CBmp::LoadBmp(const wstring & wstrFilePath)
 {
 	m_hBitmap = (HBITMAP)LoadImage(nullptr, wstrFilePath.c_str(), IMAGE_BITMAP,
-		0, 0, LR_CREATEDIBSECTION || LR_LOADFROMFILE);
+		0, 0, LR_CREATEDIBSECTION | LR_LOADFROMFILE);
 
 	HDC hDC = GetDC(g_hWnd);
 	m_hMemDC = CreateCompatibleDC(hDC);

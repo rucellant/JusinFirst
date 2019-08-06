@@ -56,6 +56,27 @@
     <Filter Include="03. Manager\07. SceneMgr\01. Scene">
       <UniqueIdentifier>{17ce9934-17c0-494b-bc92-0ded1f8d9641}</UniqueIdentifier>
     </Filter>
+    <Filter Include="03. Manager\07. SceneMgr\02. Title">
+      <UniqueIdentifier>{3d814eba-262b-438b-9ce3-8fec0474abad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager\07. SceneMgr\03. Edit">
+      <UniqueIdentifier>{2c697984-696a-4382-b65a-ea596ca2fd24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager\07. SceneMgr\04. Stage">
+      <UniqueIdentifier>{4202ca29-e569-4b39-a5ce-83f35e0a9023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager\07. SceneMgr\00. SceneMgr">
+      <UniqueIdentifier>{c68d5166-cb24-426f-9e75-17598cd63ed0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager\08. UIMgr">
+      <UniqueIdentifier>{3f5c7149-f622-48cb-9078-524076a12325}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager\08. UIMgr\01. MyUI">
+      <UniqueIdentifier>{914e2f57-9e33-4ce0-a835-193eb57190a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Manager\08. UIMgr\00. UIMgr">
+      <UniqueIdentifier>{65231665-5db7-43d3-b244-e5931782ee24}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Resource.h">
@@ -118,6 +139,24 @@
     <ClInclude Include="Scene.h">
       <Filter>03. Manager\07. SceneMgr\01. Scene</Filter>
     </ClInclude>
+    <ClInclude Include="Title.h">
+      <Filter>03. Manager\07. SceneMgr\02. Title</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMgr.h">
+      <Filter>03. Manager\07. SceneMgr\00. SceneMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="MyEdit.h">
+      <Filter>03. Manager\07. SceneMgr\03. Edit</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>03. Manager\07. SceneMgr\04. Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="MyUI.h">
+      <Filter>03. Manager\08. UIMgr\01. MyUI</Filter>
+    </ClInclude>
+    <ClInclude Include="UIMgr.h">
+      <Filter>03. Manager\08. UIMgr\00. UIMgr</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -149,6 +188,24 @@
     </ClCompile>
     <ClCompile Include="Scene.cpp">
       <Filter>03. Manager\07. SceneMgr\01. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Title.cpp">
+      <Filter>03. Manager\07. SceneMgr\02. Title</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMgr.cpp">
+      <Filter>03. Manager\07. SceneMgr\00. SceneMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="MyEdit.cpp">
+      <Filter>03. Manager\07. SceneMgr\03. Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>03. Manager\07. SceneMgr\04. Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="MyUI.cpp">
+      <Filter>03. Manager\08. UIMgr\01. MyUI</Filter>
+    </ClCompile>
+    <ClCompile Include="UIMgr.cpp">
+      <Filter>03. Manager\08. UIMgr\00. UIMgr</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

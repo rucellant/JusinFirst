@@ -42,3 +42,9 @@ using namespace std;
 #include "KeyMgr.h"
 #include "ObjMgr.h"
 #include "BmpMgr.h"
+#include "SceneMgr.h"
+#include "UIMgr.h"
+
+
+//visual leak detector
+#include "vld.h"

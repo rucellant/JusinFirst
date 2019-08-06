@@ -157,14 +157,20 @@
     <ClInclude Include="KeyMgr.h" />
     <ClInclude Include="Mainframe.h" />
     <ClInclude Include="Maingame.h" />
+    <ClInclude Include="MyEdit.h" />
+    <ClInclude Include="MyUI.h" />
     <ClInclude Include="ObjMgr.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="SceneMgr.h" />
     <ClInclude Include="ScrollMgr.h" />
+    <ClInclude Include="Stage.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Struct.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Title.h" />
     <ClInclude Include="Typedef.h" />
+    <ClInclude Include="UIMgr.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Bmp.cpp" />
@@ -173,15 +179,21 @@
     <ClCompile Include="KeyMgr.cpp" />
     <ClCompile Include="Mainframe.cpp" />
     <ClCompile Include="Maingame.cpp" />
+    <ClCompile Include="MyEdit.cpp" />
+    <ClCompile Include="MyUI.cpp" />
     <ClCompile Include="ObjMgr.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="SceneMgr.cpp" />
     <ClCompile Include="ScrollMgr.cpp" />
+    <ClCompile Include="Stage.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Title.cpp" />
+    <ClCompile Include="UIMgr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="JusinFirst.rc" />

@@ -73,7 +73,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 		}
 	}
    
-
     return (int) msg.wParam;
 }
 
@@ -153,15 +152,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
     switch (message)
     {
-	case WM_KEYDOWN:
-		switch (wParam)
-		{
-		case VK_ESCAPE:
-		case VK_RETURN:
-			DestroyWindow(hWnd);
-			break;
-		}
-		break;
     case WM_DESTROY:
         PostQuitMessage(0);
         break;
@@ -169,24 +159,4 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         return DefWindowProc(hWnd, message, wParam, lParam);
     }
     return 0;
-}
-
-// 정보 대화 상자의 메시지 처리기입니다.
-INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
-{
-    UNREFERENCED_PARAMETER(lParam);
-    switch (message)
-    {
-    case WM_INITDIALOG:
-        return (INT_PTR)TRUE;
-
-    case WM_COMMAND:
-        if (LOWORD(wParam) == IDOK || LOWORD(wParam) == IDCANCEL)
-        {
-            EndDialog(hDlg, LOWORD(wParam));
-            return (INT_PTR)TRUE;
-        }
-        break;
-    }
-    return (INT_PTR)FALSE;
 }

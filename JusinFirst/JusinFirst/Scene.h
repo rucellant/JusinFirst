@@ -13,4 +13,3 @@ public:
 private:
 	virtual void Release() = 0;
 };
-
