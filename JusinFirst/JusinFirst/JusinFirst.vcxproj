@@ -160,6 +160,7 @@
     <ClInclude Include="MyEdit.h" />
     <ClInclude Include="MyUI.h" />
     <ClInclude Include="ObjMgr.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SceneMgr.h" />
@@ -182,6 +183,7 @@
     <ClCompile Include="MyEdit.cpp" />
     <ClCompile Include="MyUI.cpp" />
     <ClCompile Include="ObjMgr.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="SceneMgr.cpp" />
     <ClCompile Include="ScrollMgr.cpp" />

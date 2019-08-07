@@ -77,6 +77,9 @@
     <Filter Include="03. Manager\08. UIMgr\00. UIMgr">
       <UniqueIdentifier>{65231665-5db7-43d3-b244-e5931782ee24}</UniqueIdentifier>
     </Filter>
+    <Filter Include="02. GameObj\01. Player">
+      <UniqueIdentifier>{ef91e843-2361-4698-bdc7-4c252a6e47b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Resource.h">
@@ -157,6 +160,9 @@
     <ClInclude Include="UIMgr.h">
       <Filter>03. Manager\08. UIMgr\00. UIMgr</Filter>
     </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>02. GameObj\01. Player</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -206,6 +212,9 @@
     </ClCompile>
     <ClCompile Include="UIMgr.cpp">
       <Filter>03. Manager\08. UIMgr\00. UIMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>02. GameObj\01. Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

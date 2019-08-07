@@ -1,5 +1,7 @@
 #pragma once
 
+
+//키 입력 상수
 const DWORD KEY_UP		= 0x00000001;
 const DWORD KEY_DOWN	= 0x00000002;
 const DWORD KEY_LEFT	= 0x00000004;
@@ -19,3 +21,24 @@ const DWORD KEY_2		= 0x00008000;
 const DWORD KEY_3		= 0x00010000;
 const DWORD KEY_4		= 0x00020000;
 const DWORD KEY_5		= 0x00040000;
+
+//플레이어 이미지 RECT 크기
+const UINT PLAYER_IDLE_WIDTH	= 92;
+const UINT PLAYER_IDLE_HEIGHT	= 116;
+const UINT PLAYER_RUN_WIDTH		= 88;
+const UINT PLAYER_RUN_HEIGHT	= 132;
+
+//타일 이미지 RECT 크기
+const UINT TILE_WIDTH	= 32;
+const UINT TILE_HEIGHT	= 32;
+
+//플레이어 방향
+
+const int PLAYER_EAST			= 2;
+const int PLAYER_EAST_NORTH		= 1;
+const int PLAYER_NORTH			= 0;
+const int PLAYER_NORTH_WEST		= 7;
+const int PLAYER_WEST			= 6;
+const int PLAYER_SOUTH_WEST		= 5;
+const int PLAYER_SOUTH			= 4;
+const int PLAYER_EAST_SOUTH		= 3;

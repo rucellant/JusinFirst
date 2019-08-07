@@ -17,12 +17,9 @@ public:
 	void Update();
 
 	bool KeyPressing(DWORD dwKey);
-	bool KeyPressing(TCHAR tKey);
 	
 	bool KeyDown(DWORD dwKey);
-	bool KeyDown(TCHAR tKey);
 	
 	bool KeyUp(DWORD dwKey);
-	bool KeyUp(TCHAR tKey);
 };
 

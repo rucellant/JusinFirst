@@ -47,7 +47,7 @@ void CObjMgr::Render(HDC hDC)
 		OBJLIST::iterator iter_Begin = m_ObjList[i].begin();
 		OBJLIST::iterator iter_End = m_ObjList[i].end();
 
-		for (; iter_Begin != iter_End;)
+		for (; iter_Begin != iter_End; ++iter_Begin)
 			(*iter_Begin)->Render(hDC);
 	}
 }

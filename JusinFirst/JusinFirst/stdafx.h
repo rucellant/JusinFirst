@@ -44,6 +44,7 @@ using namespace std;
 #include "BmpMgr.h"
 #include "SceneMgr.h"
 #include "UIMgr.h"
+#include "ScrollMgr.h"
 
 
 //visual leak detector
