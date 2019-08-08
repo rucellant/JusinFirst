@@ -24,6 +24,16 @@ const DWORD KEY_5		= 0x00040000;
 const DWORD KEY_LBUTTON	= 0x00080000;
 const DWORD KEY_RBUTTON	= 0x00100000;
 
+//플레이어 방향
+const int PLAYER_EAST = 2;
+const int PLAYER_EAST_NORTH = 1;
+const int PLAYER_NORTH = 0;
+const int PLAYER_NORTH_WEST = 7;
+const int PLAYER_WEST = 6;
+const int PLAYER_SOUTH_WEST = 5;
+const int PLAYER_SOUTH = 4;
+const int PLAYER_EAST_SOUTH = 3;
+
 //플레이어 이미지 RECT 크기
 const UINT PLAYER_IDLE_WIDTH	= 92;
 const UINT PLAYER_IDLE_HEIGHT	= 116;
@@ -41,13 +51,3 @@ const UINT TILEROW		= 11;
 const UINT TITLE_UI_WIDTH = 498;
 const UINT TITLE_UI_HEIGHT = 83;
 
-//플레이어 방향
-
-const int PLAYER_EAST			= 2;
-const int PLAYER_EAST_NORTH		= 1;
-const int PLAYER_NORTH			= 0;
-const int PLAYER_NORTH_WEST		= 7;
-const int PLAYER_WEST			= 6;
-const int PLAYER_SOUTH_WEST		= 5;
-const int PLAYER_SOUTH			= 4;
-const int PLAYER_EAST_SOUTH		= 3;

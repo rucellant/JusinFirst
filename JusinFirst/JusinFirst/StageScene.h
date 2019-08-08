@@ -1,11 +1,11 @@
 #pragma once
 #include "Scene.h"
 
-class CStage : public CScene
+class CStageScene : public CScene
 {
 public:
-	CStage();
-	virtual ~CStage();
+	CStageScene();
+	virtual ~CStageScene();
 
 public:
 	// CScene을(를) 통해 상속됨

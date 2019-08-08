@@ -1,11 +1,6 @@
 #pragma once
 class CScene
 {
-protected:
-	bool isDrawLine;
-	float fLineX;
-	float fLineY;
-
 public:
 	CScene();
 	virtual ~CScene();
@@ -17,8 +12,4 @@ public:
 
 private:
 	virtual void Release() = 0;
-
-public:
-	void DrawTileLine(HDC hDC);
-	void ToggleLineState();
 };

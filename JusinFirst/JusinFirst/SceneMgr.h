@@ -7,21 +7,25 @@ class CSceneMgr
 DECLARE_SINGLETON(CSceneMgr)
 
 private:
+	CScene* m_pCurrentScene;
+
+	SCENE_TYPE m_eCurSceneType;
+	SCENE_TYPE m_eNextSceneType;
+
+private:
 	CSceneMgr();
 	~CSceneMgr();
 
-private:
-	SCENE_TYPE m_eCurSceneType;
-	SCENE_TYPE m_ePreSceneType;
-
-	CScene* m_pCurScene;
-
 public:
-	void ChangeScene(SCENE_TYPE eSceneType);
+	void SceneChange();
+
 	void Update();
 	void Render(HDC hDC);
 
 private:
 	void Release();
+
+public:
+	void SetSceneState(SCENE_TYPE eSceneType);
 };
 

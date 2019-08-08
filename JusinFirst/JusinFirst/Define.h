@@ -6,6 +6,7 @@
 #define NO_EVENT		0
 #define OBJ_DEAD		1
 #define SCENE_CHANGE	2
+#define GAME_END		3
 
 #define ROOT2	sqrtf(2)
 

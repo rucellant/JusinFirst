@@ -80,6 +80,9 @@
     <Filter Include="02. GameObj\02. Button\01. TitleButton">
       <UniqueIdentifier>{f0bad3d6-19a0-45c6-bb9f-ec9919d3d2d9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="02. GameObj\03. Background">
+      <UniqueIdentifier>{cde61973-a9e0-499b-8edf-02b2ffc0ffa7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Resource.h">
@@ -124,9 +127,6 @@
     <ClInclude Include="Function.h">
       <Filter>98. Header</Filter>
     </ClInclude>
-    <ClInclude Include="ObjMgr.h">
-      <Filter>04. Manager\03. ObjMgr</Filter>
-    </ClInclude>
     <ClInclude Include="Typedef.h">
       <Filter>98. Header</Filter>
     </ClInclude>
@@ -142,26 +142,26 @@
     <ClInclude Include="Scene.h">
       <Filter>04. Manager\07. SceneMgr\01. Scene</Filter>
     </ClInclude>
-    <ClInclude Include="SceneMgr.h">
-      <Filter>04. Manager\07. SceneMgr\00. SceneMgr</Filter>
-    </ClInclude>
-    <ClInclude Include="MyEdit.h">
-      <Filter>04. Manager\07. SceneMgr\03. Edit</Filter>
-    </ClInclude>
-    <ClInclude Include="Stage.h">
-      <Filter>04. Manager\07. SceneMgr\04. Stage</Filter>
-    </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>02. GameObj\01. Player</Filter>
     </ClInclude>
-    <ClInclude Include="Title.h">
+    <ClInclude Include="SceneMgr.h">
+      <Filter>04. Manager\07. SceneMgr\00. SceneMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
       <Filter>04. Manager\07. SceneMgr\02. Title</Filter>
+    </ClInclude>
+    <ClInclude Include="EditScene.h">
+      <Filter>04. Manager\07. SceneMgr\03. Edit</Filter>
+    </ClInclude>
+    <ClInclude Include="StageScene.h">
+      <Filter>04. Manager\07. SceneMgr\04. Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMgr.h">
+      <Filter>04. Manager\03. ObjMgr</Filter>
     </ClInclude>
     <ClInclude Include="TitleButton.h">
       <Filter>02. GameObj\02. Button\01. TitleButton</Filter>
-    </ClInclude>
-    <ClInclude Include="EditButton.h">
-      <Filter>02. GameObj\02. Button\02. EditButton</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -180,9 +180,6 @@
     <ClCompile Include="KeyMgr.cpp">
       <Filter>04. Manager\02. KeyMgr</Filter>
     </ClCompile>
-    <ClCompile Include="ObjMgr.cpp">
-      <Filter>04. Manager\03. ObjMgr</Filter>
-    </ClCompile>
     <ClCompile Include="ScrollMgr.cpp">
       <Filter>04. Manager\04. ScrollMgr</Filter>
     </ClCompile>
@@ -195,26 +192,26 @@
     <ClCompile Include="Scene.cpp">
       <Filter>04. Manager\07. SceneMgr\01. Scene</Filter>
     </ClCompile>
-    <ClCompile Include="SceneMgr.cpp">
-      <Filter>04. Manager\07. SceneMgr\00. SceneMgr</Filter>
-    </ClCompile>
-    <ClCompile Include="MyEdit.cpp">
-      <Filter>04. Manager\07. SceneMgr\03. Edit</Filter>
-    </ClCompile>
-    <ClCompile Include="Stage.cpp">
-      <Filter>04. Manager\07. SceneMgr\04. Stage</Filter>
-    </ClCompile>
     <ClCompile Include="Player.cpp">
       <Filter>02. GameObj\01. Player</Filter>
     </ClCompile>
-    <ClCompile Include="Title.cpp">
+    <ClCompile Include="SceneMgr.cpp">
+      <Filter>04. Manager\07. SceneMgr\00. SceneMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
       <Filter>04. Manager\07. SceneMgr\02. Title</Filter>
+    </ClCompile>
+    <ClCompile Include="EditScene.cpp">
+      <Filter>04. Manager\07. SceneMgr\03. Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="StageScene.cpp">
+      <Filter>04. Manager\07. SceneMgr\04. Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMgr.cpp">
+      <Filter>04. Manager\03. ObjMgr</Filter>
     </ClCompile>
     <ClCompile Include="TitleButton.cpp">
       <Filter>02. GameObj\02. Button\01. TitleButton</Filter>
-    </ClCompile>
-    <ClCompile Include="EditButton.cpp">
-      <Filter>02. GameObj\02. Button\02. EditButton</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -1,19 +1,19 @@
 #include "stdafx.h"
-#include "Title.h"
+#include "TitleScene.h"
 #include "TitleButton.h"
 
 
-CTitle::CTitle()
+CTitleScene::CTitleScene()
 {
 }
 
 
-CTitle::~CTitle()
+CTitleScene::~CTitleScene()
 {
 	Release();
 }
 
-void CTitle::Initialize()
+void CTitleScene::Initialize()
 {
 	CBmpMgr::GetInstance()->LoadBmp(L"../Image/Title/Title_Background.bmp", L"Title_Background");
 	CBmpMgr::GetInstance()->LoadBmp(L"../Image/Title/Title_Logo.bmp", L"Title_Logo");
@@ -22,36 +22,35 @@ void CTitle::Initialize()
 	CBmpMgr::GetInstance()->LoadBmp(L"../Image/Title/Title_Edit.bmp", L"Title_Edit");
 	CBmpMgr::GetInstance()->LoadBmp(L"../Image/Title/Title_Exit.bmp", L"Title_Exit");
 
-	CGameObj* pButton = CAbstractFactory<CTitleButton>::
-		CreateObj(GAMECX*0.5f, GAMECY*0.5f, L"Title_Start");
-	CObjMgr::GetInstance()->AddObj(TYPE_UI, pButton);
+	CGameObj* pObj = CAbstractFactory<CTitleButton>::
+		CreateObj(GAMECX*0.4f, GAMECY*0.4f, L"Title_Start");
+	CObjMgr::GetInstance()->AddObj(TYPE_UI, pObj);
 
-	pButton = CAbstractFactory<CTitleButton>::
-		CreateObj(GAMECX*0.5f, GAMECY*0.5f + TITLE_UI_HEIGHT, L"Title_Edit");
-	CObjMgr::GetInstance()->AddObj(TYPE_UI, pButton);
+	pObj = CAbstractFactory<CTitleButton>::
+		CreateObj(GAMECX*0.4f, GAMECY*0.4f + 83.f, L"Title_Edit");
+	CObjMgr::GetInstance()->AddObj(TYPE_UI, pObj);
 
-	pButton = CAbstractFactory<CTitleButton>::
-		CreateObj(GAMECX*0.5f, GAMECY*0.5f + TITLE_UI_HEIGHT * 2, L"Title_Exit");
-	CObjMgr::GetInstance()->AddObj(TYPE_UI, pButton);
+	pObj = CAbstractFactory<CTitleButton>::
+		CreateObj(GAMECX*0.4f, GAMECY*0.4f + 83.f * 2, L"Title_Exit");
+	CObjMgr::GetInstance()->AddObj(TYPE_UI, pObj);
 }
 
-int CTitle::Update()
+int CTitleScene::Update()
 {
-	if (CKeyMgr::GetInstance()->KeyDown(KEY_SPACE))
-	{
-		CSceneMgr::GetInstance()->ChangeScene(SCENE_STAGE);
-		return SCENE_CHANGE;
-	}
+	if (CKeyMgr::GetInstance()->KeyDown(KEY_1))
+		CSceneMgr::GetInstance()->SetSceneState(SCENE_EDIT);
+	else if (CKeyMgr::GetInstance()->KeyDown(KEY_ESCAPE))
+		DestroyWindow(g_hWnd);
+	else {}
 
 	CObjMgr::GetInstance()->Update();
 
 	return 0;
 }
 
-void CTitle::Render(HDC hDC)
+void CTitleScene::Render(HDC hDC)
 {
 	HDC hMemDC = CBmpMgr::GetInstance()->GetMemDC(L"Title_Background");
-
 	StretchBlt(hDC, 0, 0, GAMECX, GAMECY, hMemDC, 0, 0, 1920, 1080, SRCCOPY);
 
 	hMemDC = CBmpMgr::GetInstance()->GetMemDC(L"Title_Logo");
@@ -61,7 +60,7 @@ void CTitle::Render(HDC hDC)
 	CObjMgr::GetInstance()->Render(hDC);
 }
 
-void CTitle::Release()
+void CTitleScene::Release()
 {
 	CObjMgr::GetInstance()->ReleaseGroup(TYPE_UI);
 }

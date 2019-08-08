@@ -1,5 +1,6 @@
 #pragma once
 
+//ObjMgr에서 객체들을 관리할 때 OBJ_TYPE에서 따라 분류하여 관리한다.
 enum OBJ_TYPE
 {
 	TYPE_BACKGROUND, TYPE_PLAYER, TYPE_ENTITY, TYPE_MONSTER, TYPE_UI, TYPE_END
