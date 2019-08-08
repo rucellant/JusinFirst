@@ -43,7 +43,6 @@ using namespace std;
 #include "ObjMgr.h"
 #include "BmpMgr.h"
 #include "SceneMgr.h"
-#include "UIMgr.h"
 #include "ScrollMgr.h"
 
 

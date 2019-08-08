@@ -24,6 +24,8 @@ private:
 public:
 	void AddObj(OBJ_TYPE eType, CGameObj* _pObj);
 
+	void ReleaseGroup(OBJ_TYPE eType);
+
 public:
 	CGameObj* GetPlayer() const;
 };

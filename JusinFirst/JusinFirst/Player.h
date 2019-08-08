@@ -18,6 +18,7 @@ private:
 
 private:
 	void KeyInput();
+	void Moving();
 	void IsFrame();
 };
 

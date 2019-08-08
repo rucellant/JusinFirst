@@ -39,5 +39,8 @@ public:
 	void SetHeight(const float _fHeight);
 	void SetIsDead(const bool _bIsDead);
 	void SetState(const OBJ_STATE _eState);
+	void SetCol(int _iCol);
+	void SetRow(int _iRow);
+	void SetObjectKey(const wstring& _wstrObjectKey);
 };
 

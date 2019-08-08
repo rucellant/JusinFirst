@@ -1,6 +1,5 @@
 #pragma once
 #include "Scene.h"
-
 class CTitle : public CScene
 {
 public:

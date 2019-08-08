@@ -1,14 +1,10 @@
 #pragma once
 #include "GameObj.h"
-
-class CMyUI : public CGameObj
+class CTitleButton : public CGameObj
 {
-private:
-	CGameObj* m_pPlayer;
-
 public:
-	CMyUI();
-	virtual ~CMyUI();
+	CTitleButton();
+	virtual ~CTitleButton();
 
 public:
 	// CGameObj을(를) 통해 상속됨
@@ -18,5 +14,8 @@ public:
 	
 private:
 	virtual void Release() override;
+
+private:
+	void isPicking();
 };
 

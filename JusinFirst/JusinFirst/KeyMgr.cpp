@@ -57,6 +57,10 @@ void CKeyMgr::Update()
 		m_dwKey |= KEY_4;
 	if (GetAsyncKeyState('5') & 0x8000)
 		m_dwKey |= KEY_5;
+	if (GetAsyncKeyState(VK_LBUTTON) & 0x8000)
+		m_dwKey |= KEY_LBUTTON;
+	if (GetAsyncKeyState(VK_RBUTTON) & 0x8000)
+		m_dwKey |= KEY_RBUTTON;
 }
 
 bool CKeyMgr::KeyPressing(DWORD dwKey)

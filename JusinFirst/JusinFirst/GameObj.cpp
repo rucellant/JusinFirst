@@ -85,3 +85,18 @@ void CGameObj::SetState(const OBJ_STATE _eState)
 {
 	m_tFrame.eState = _eState;
 }
+
+void CGameObj::SetCol(int _iCol)
+{
+	m_tFrame.iCol = _iCol;
+}
+
+void CGameObj::SetRow(int _iRow)
+{
+	m_tFrame.iRow = _iRow;
+}
+
+void CGameObj::SetObjectKey(const wstring & _wstrObjectKey)
+{
+	m_tFrame.wstrObjectKey = _wstrObjectKey;
+}

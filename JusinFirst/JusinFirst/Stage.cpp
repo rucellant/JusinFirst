@@ -40,8 +40,7 @@ int CStage::Update()
 void CStage::Render(HDC hDC)
 {
 	HDC hMemDC = CBmpMgr::GetInstance()->GetMemDC(L"Stage");
-	BitBlt(hDC, -CScrollMgr::XScroll, -CScrollMgr::YScroll,
-		GAMECX, GAMECY, hMemDC, 0, 0, SRCCOPY);
+	BitBlt(hDC, 0, 0, GAMECX, GAMECY, hMemDC, 0, 0, SRCCOPY);
 	
 	CObjMgr::GetInstance()->Render(hDC);
 

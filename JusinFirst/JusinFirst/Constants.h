@@ -21,6 +21,8 @@ const DWORD KEY_2		= 0x00008000;
 const DWORD KEY_3		= 0x00010000;
 const DWORD KEY_4		= 0x00020000;
 const DWORD KEY_5		= 0x00040000;
+const DWORD KEY_LBUTTON	= 0x00080000;
+const DWORD KEY_RBUTTON	= 0x00100000;
 
 //플레이어 이미지 RECT 크기
 const UINT PLAYER_IDLE_WIDTH	= 92;
@@ -29,8 +31,15 @@ const UINT PLAYER_RUN_WIDTH		= 88;
 const UINT PLAYER_RUN_HEIGHT	= 132;
 
 //타일 이미지 RECT 크기
-const UINT TILE_WIDTH	= 32;
-const UINT TILE_HEIGHT	= 32;
+const UINT TILE_WIDTH	= 64;
+const UINT TILE_HEIGHT	= 64;
+//타일 갯수
+const UINT TILECOL		= 14;
+const UINT TILEROW		= 11;
+
+//타이틀 UI
+const UINT TITLE_UI_WIDTH = 498;
+const UINT TITLE_UI_HEIGHT = 83;
 
 //플레이어 방향
 

@@ -18,18 +18,18 @@ void CScene::DrawTileLine(HDC hDC)
 
 	if (isDrawLine)
 	{
-		while (fLineX - CScrollMgr::XScroll <= GAMECX)
+		while (fLineX <= GAMECX)
 		{
-			MoveToEx(hDC, int(fLineX - CScrollMgr::XScroll), int(-CScrollMgr::YScroll), nullptr);
-			LineTo(hDC, int(fLineX - CScrollMgr::XScroll), int(GAMECY - CScrollMgr::YScroll));
-			fLineX += 32.f;
+			MoveToEx(hDC, fLineX, 0, nullptr);
+			LineTo(hDC, fLineX, GAMECY);
+			fLineX += 64.f;
 		}
 
-		while (fLineY - CScrollMgr::YScroll <= GAMECY)
+		while (fLineY <= GAMECY)
 		{
-			MoveToEx(hDC, int(-CScrollMgr::XScroll), int(fLineY - CScrollMgr::YScroll), nullptr);
-			LineTo(hDC, int(GAMECX - CScrollMgr::XScroll), int(fLineY - CScrollMgr::YScroll));
-			fLineY += 32.f;
+			MoveToEx(hDC, 0, fLineY, nullptr);
+			LineTo(hDC, GAMECX, fLineY);
+			fLineY += 64.f;
 		}
 	}
 }
